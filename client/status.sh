@@ -2,7 +2,7 @@
 
 SERVER="localhost"
 
-status=$(ps -ef | grep -i 'CptHost15980' | grep -v 'grep')
+status=$(ps -ef | grep -i 'CptHost' | grep -v 'grep')
 
 if [[ ${status} ]];
     then
