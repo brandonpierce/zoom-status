@@ -1,8 +1,5 @@
 services:
   web:
-    # for openresty
-    # image: openresty/openresty:buster
-    # flask
     build: .
     ports:
       - "5000:5000"
@@ -12,9 +9,5 @@ services:
       FLASK_ENV: development
     links:
       - redis
-    # for openresty
-    # volumes:
-    #   - ./openresty/conf.d:/etc/nginx/conf.d
-    #   - ./openresty/lua:/var/app
   redis:
     image: redis:6.0-alpine
